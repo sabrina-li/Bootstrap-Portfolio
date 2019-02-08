@@ -42,6 +42,9 @@ main{
     height: 40px;
 }
 
-.nav-item:hover{
-    background: var(--primary-lighten-3);
+.nav-pills > .nav-item > .nav-link.active:hover,.nav-link:hover {
+    background: var(--primary-lighten-4);
+}
+.nav-pills > .nav-item > .nav-link.active, .nav-pills > .nav-item > .nav-link.active:hover {
+    background:var(--primary-lighten-2);
 }
