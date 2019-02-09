@@ -1,10 +1,9 @@
 :root {
-   --primary-lighten-5:  #e0f2f1;
-   --primary-lighten-4:#b2dfdb;   
-   --primary-lighten-3:#80cbc4;
-   --primary-lighten-2:#4db6ac;  
-   --primary-lighten-1:#26a69a; 
-   --primary:#009688 ;
+   --primary-lighten-4:#e0f2f1;   
+   --primary-lighten-3:#b2dfdb;
+   --primary-lighten-2:#80cbc4;  
+   --primary-lighten-1:#4db6ac; 
+   --primary:#4aaaa5 ;
    --primary-darken-1:#00897b   ;
    --primary-darken-2:#00796b  ;
    --primary-darken-3:#00695c   ; 
@@ -25,9 +24,19 @@ body {
     height:100vh;
     background: url("../images/gravel.png");
     background-repeat: repeat;
+    color: #777777;
 }
 header,#mainsection,.footer-fluid{
-    background: white;
+    background: #ffffff;
+}
+
+#mainsection{
+    border: 1px solid #dddddd;
+}
+
+.border-bottom{
+    border-bottom: 2px solid #cccccc!important;
+
 }
 
 #name{
@@ -36,10 +45,12 @@ header,#mainsection,.footer-fluid{
 }
 
 main{
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 150px);
 }
 .footer-fluid{
     height: 40px;
+    border-top: 3px solid var(--primary-lighten-1);
+    background-color: #666666;
 }
 
 .nav-pills > .nav-item > .nav-link.active:hover,.nav-link:hover {
